@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+
+display:flex;
+background:#111;
+color:white;
+
+}
+
+
+
+.sidebar{
+
+width:200px;
+background:#000;
+background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+height:100vh;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+background-image: url("tree.jpeg");
+padding:20px;
+
+position:fixed;
+
+}
+
+.sidebar a{
+
+color:white;
+text-decoration:none;
+margin:10px 0;
+
+
+}
+
+.profile{
+
+width:100px;
+height:100px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:10px;
+
+}
+
+
+
+
+.main{
+
+margin-left:200px;
+width:100%;
+
+}
+
+
+
+#hero{
+
+height:100vh;
+background-image: url("wood.jpeg");
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+
+}
+
+.typing{
+
+font-size:22px;
+margin-top:10px;
+
+}
+
+.timeline{
+
+margin:40px;
+border-left:3px solid white;
+background-image: url("wood.jpeg");
+padding-left:20px;
+
+}
+
+.timeline-item{
+
+margin-bottom:20px;
+
+
+}
+
+.grid{
+
+display:grid;
+background-image: url("wood.jpeg");
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+
+gap:20px;
+
+padding:40px;
+
+}
+
+.box{
+
+background:#333;
+padding:40px;
+text-align:center;
+border-radius:10px;
+transition:0.3s;
+
+background: linear-gradient(90deg,rgba(99, 130, 143, 1) 0%, rgba(100, 122, 110, 1) 50%, rgba(48, 47, 30, 1) 100%);
+}
+
+.box:hover{
+
+transform:scale(1.1);
+
+}
+
+
+
+
+#contact{
+background-image: url("wood.jpeg");
+padding:40px;
+text-align:center;
+
+}
+</style>
+</head>
+
+<body>
+
+
+
+<div class="sidebar">
+
+<img src="Mine-modified (2).png" class="profile">
+
+<h2>Kunal</h2>
+
+<a href="#hero">Home</a>
+<a href="#timeline">Journey</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+
+<div class="main">
+      <section id="hero">
+        <h1>Hello I'm Kunal</h1>
+         <p class="typing"></p> 
+       </section>
+
+
+
+
+<section id="timeline">
+
+<h2>My Journey</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>2024</h3>
+<p>Started learning HTML and CSS.</p>
+</div>
+
+<div class="timeline-item">
+<h3>2025</h3>
+<p>Built my first websites.</p>
+</div>
+
+<div class="timeline-item">
+<h3>2026</h3>
+<p>Creating modern portfolio projects.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="box">Portfolio Website</div>
+
+<div class="box">Landing Page</div>
+
+<div class="box">Responsive Layout</div>
+
+<div class="box">UI Design</div>
+
+</div>
+
+</section>
+
+
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: kkunalkakaji1777@gmail.com</p>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
